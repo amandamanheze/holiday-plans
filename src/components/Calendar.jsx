@@ -149,6 +149,7 @@ const BigCalendar = () => {
             event: MonthEvent,
           }}
         />
+        {events.length > 0 && (
         <div className='flex flex-wrap gap-4'>
           <h2 className='bg-gray-300 tracking-tighter font-semibold p-2 w-full rounded mt-1'>ALL YOUR PLANS</h2>
           {events.map((event, index) => (
@@ -178,6 +179,7 @@ const BigCalendar = () => {
             </div>
           ))}
         </div>
+        )}
         {showModal && (
           <div
             className='modal'
