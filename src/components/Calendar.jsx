@@ -99,15 +99,16 @@ const BigCalendar = () => {
     doc.setTextColor(0, 0, 0);
   
     const cardContent = `
-      Title: ${event.title}
-      Description: ${event.description}
-      Start: ${event.start.toLocaleString()}
-      End: ${event.end.toLocaleString()}
-      Location: ${event.location}
+      Title: ${event.title}\n
+      Description: ${event.description}\n
+      Start: ${event.start.toLocaleString()}\n
+      End: ${event.end.toLocaleString()}\n
+      Location: ${event.location}\n
       Participants: ${event.participants}
     `;
 
-    doc.text(cardContent, 15, 15);
+    const lines = doc.splitTextToSize(cardContent, 180)
+    doc.text(15, 15, lines);
 
     const fileName = `${event.title.replace(/ /g, '_')}_${event.start.toLocaleDateString().replace(/\//g, '-')}.pdf`;
     doc.save(fileName);
