@@ -1,24 +1,29 @@
-# Getting Started
+# 𝙶𝚎𝚝𝚝𝚒𝚗𝚐 𝚂𝚝𝚊𝚛𝚝𝚎𝚍
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#### 𝚂𝚎𝚝𝚞𝚙
 
-In the project directory, run:
+##### In the project directory, run:
 
-### `npm i`
+```bash
+𝚗𝚙𝚖 𝚒
+```
 
-### `npm start`
-
-Runs the app in the development mode.\
+##### Runs the app in the development mode:
+```bash
+𝚗𝚙𝚖 𝚜𝚝𝚊𝚛𝚝
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### `npm test`
+```bash
+𝚗𝚙𝚖 𝚝𝚎𝚜𝚝 
+```
 
-Launches the test runner in the interactive watch mode.\
+#### Launches the test runner in the interactive watch mode.
 
-### `npm run build`
-
+```bash
+𝚗𝚙𝚖 𝚛𝚞𝚗 𝚋𝚞𝚒𝚕𝚍
+```
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
